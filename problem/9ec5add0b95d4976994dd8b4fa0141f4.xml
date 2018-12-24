@@ -1,6 +1,0 @@
-<problem display_name="Checkout" markdown="null" max_attempts="3" showanswer="past_due">
-  <stringresponse answer="John" type="ci">
-    <label>The checkout password is written on the board.  To get credit for the microquiz you must fill in the checkout password below.  <font color="red"><b>Anyone who does not get this question correct will get a 0 for the quiz, so make sure you type it correctly, Submit, and see a green checkmark for this question.</b></font> </label>
-    <textline size="20"/>
-  </stringresponse>
-</problem>

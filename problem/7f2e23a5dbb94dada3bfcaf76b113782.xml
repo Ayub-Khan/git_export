@@ -1,9 +1,0 @@
-<problem display_name="Problem 2-1" markdown="null" max_attempts="1" showanswer="never">
-  <p>Indirection, as talked about in lecture, means you have to traverse the list more than once.</p>
-  <multiplechoiceresponse>
-    <choicegroup type="MultipleChoice">
-      <choice correct="false">True</choice>
-      <choice correct="true">False</choice>
-    </choicegroup>
-  </multiplechoiceresponse>
-</problem>

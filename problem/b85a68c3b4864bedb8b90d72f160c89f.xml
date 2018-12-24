@@ -1,9 +1,0 @@
-<problem display_name="Problem 2-3" markdown="null" max_attempts="1" showanswer="never">
-  <p>The worst case time complexity for selection sort is [mathjaxinline]O(n^2)[/mathjaxinline].</p>
-  <multiplechoiceresponse>
-    <choicegroup type="MultipleChoice">
-      <choice correct="true">True</choice>
-      <choice correct="false">False</choice>
-    </choicegroup>
-  </multiplechoiceresponse>
-</problem>
