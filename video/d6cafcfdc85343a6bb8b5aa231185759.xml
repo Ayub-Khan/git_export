@@ -1,0 +1,13 @@
+<video youtube="1.00:cx7m9hDG_OE" url_name="d6cafcfdc85343a6bb8b5aa231185759" sub="" transcripts="{&quot;en&quot;: &quot;0a2cba54-d72d-4fee-9858-ed07b5053ab2-en.srt&quot;}" display_name="Video: Methods" download_track="true" download_video="true" edx_video_id="0a2cba54-d72d-4fee-9858-ed07b5053ab2" handout="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture9.zip" html5_sources="[]" youtube_id_1_0="cx7m9hDG_OE">
+  <handout src="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture9.zip"/>
+  <video_asset client_video_id="L9_S3.mp4" duration="686.73" image="">
+    <encoded_video bitrate="253" file_size="21734992" profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V005500_MB1.mp4"/>
+    <encoded_video bitrate="219" file_size="18869239" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V005500_MB2.mp4"/>
+    <encoded_video bitrate="384" file_size="32975200" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V005500_DTH.mp4"/>
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="cx7m9hDG_OE"/>
+    <transcripts>
+      <transcript file_format="srt" language_code="en" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="0a2cba54-d72d-4fee-9858-ed07b5053ab2-en.srt"/>
+</video>

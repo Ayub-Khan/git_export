@@ -1,0 +1,13 @@
+<video youtube="1.00:RJhZ5SD1AvY" url_name="9397c05ccf4447eb80149fe8b10e055e" sub="" transcripts="{&quot;en&quot;: &quot;203ecf0a-71bb-4654-9ce1-7db7de287746-en.srt&quot;}" display_name="Video: Program Efficiency" download_track="true" download_video="true" edx_video_id="203ecf0a-71bb-4654-9ce1-7db7de287746" handout="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture11.zip" html5_sources="[]" youtube_id_1_0="RJhZ5SD1AvY">
+  <handout src="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture11.zip"/>
+  <video_asset client_video_id="L11_S1.mp4" duration="806.55" image="">
+    <encoded_video bitrate="231" file_size="23331674" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006600_MB2.mp4"/>
+    <encoded_video bitrate="265" file_size="26801679" profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006600_MB1.mp4"/>
+    <encoded_video bitrate="431" file_size="43466757" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006600_DTH.mp4"/>
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="RJhZ5SD1AvY"/>
+    <transcripts>
+      <transcript file_format="srt" language_code="en" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="203ecf0a-71bb-4654-9ce1-7db7de287746-en.srt"/>
+</video>

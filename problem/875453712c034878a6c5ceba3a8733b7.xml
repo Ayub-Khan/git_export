@@ -1,0 +1,31 @@
+<problem display_name="Survey" markdown="null" showanswer="never">
+  <script type="text/python" system_path="python_lib">
+def partialcredit(answer_ids, student_answers, new_cmap, old_cmap):
+    aid = answer_ids[0]
+    try:
+        ans = student_answers[aid]
+        if new_cmap.is_correct(aid):
+            hint = "&lt;b&gt;CONGRATULATIONS ON FINISHING THE QUIZ!&lt;/b&gt;&lt;br/&gt;&lt;a href='https://twitter.com/intent/tweet?screen_name=mitx6001x&amp;text=I%20just%20finished%20the%20%23pythonquiz%20and%20loved%20it!%20%23codingisfun%20%23learningalot' class='twitter-mention-button' data-size='large'&gt;Tweet @mitx6001x&lt;/a&gt; that you loved the quiz! &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');&lt;/script&gt; &lt;br/&gt; &lt;a href='https://twitter.com/intent/tweet?screen_name=mitx6001x&amp;text=I%20just%20finished%20the%20%23pythonquiz%20and%20it%20was%20challenging...%20%23nevergiveup%20%23doyourbest' class='twitter-mention-button' data-size='large'&gt;Tweet @mitx6001x&lt;/a&gt; that the quiz was challenging. &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');&lt;/script&gt;"
+            new_cmap.set_hint_and_mode(aid, hint, 'always')
+    except KeyError:
+        score = 1
+        new_cmap.set_property(aid, 'npoints', score)
+        new_cmap.set_property(aid, 'correctness', 'correct')
+</script>
+  <p>The pace of the videos is</p>
+  <multiplechoiceresponse>
+    <choicegroup label="a" type="MultipleChoice">
+      <choice correct="true">Too fast</choice>
+      <choice correct="true">Too slow</choice>
+      <choice correct="true">Just right</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+  <p>The problem sets are</p>
+  <multiplechoiceresponse>
+    <choicegroup label="a" type="MultipleChoice">
+      <choice correct="true">Too hard</choice>
+      <choice correct="true">Too easy</choice>
+      <choice correct="true">Just right</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,41 @@
+<problem display_name="Problem 6 Part 2 of 3" markdown="null" max_attempts="10" showanswer="never" weight="6.0">
+  <text>
+    <p>
+      <b>
+        <font color="red">If you are done the exam, <a href="https://docs.google.com/forms/d/1mMEeZz2KBcBZHbQA_Fu9DrclOoIHwsuIT9YF2uqG5ts/" target="_blank">click here to checkout</a>. Only checkout once to remove your quiz access. <br/> If you do not checkout you will receive a zero on the exam.</font>
+      </b>
+    </p>
+    <p>
+    </p>
+    <p>Write a method in <code>Bag</code> such that if <code>b1</code> and <code>b2</code> were bags then <code>b1+b2</code> gives a new bag representing the union of the two bags. Do not add any other methods. </p>
+    <ul>
+      <li>For example,
+    <pre>a = Bag()
+a.insert(4)
+a.insert(3)
+b = Bag()
+b.insert(4)
+print(a+b)
+</pre>
+prints
+<pre>
+3:1
+4:2
+</pre>  
+      </li>
+    </ul>
+    <p><b>Paste your entire class for <code>Bag</code> with the new method</b>, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <grader_payload>
+{"grader": "quiz/60001_s2018/bag_add/grade_bag_add_student.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>Note: An L379 or L397 error:</b> means that your code has an infinite loop for some test case. You will receive a zero for this problem if your code has an infinite loop.
+  </p>
+  <p><b>Note on Score Shown:</b> Your code will ultimately be run on our test cases. Getting "Correct"/green check during the exam does not mean you will get full points. The test cases here ensures you do not have a copy/paste error from your IDE.
+  </p>
+</problem>

@@ -1,0 +1,38 @@
+<problem display_name="Problem 8" markdown="null" max_attempts="10" showanswer="never" weight="15.0">
+  <text>
+    <p>
+      <b>
+        <font color="red">If you are done the exam, <a href="https://docs.google.com/forms/d/1mMEeZz2KBcBZHbQA_Fu9DrclOoIHwsuIT9YF2uqG5ts/" target="_blank">click here to checkout</a>. Only checkout once to remove your quiz access. <br/> If you do not checkout you will receive a zero on the exam.</font>
+      </b>
+    </p>
+    <p>Write a function that implements the specification below.</p>
+    <pre>def common(Ld):
+    """ Ld: a list of dictionaries mapping keys to ints
+    Returns a new dictionary d_new. 
+    The keys in d_new are the shared keys that occur in all of the dictionaries in Ld. 
+    The value in d_new for a key is the maximum of the values associated with that key.  
+    """
+    # your code here
+</pre>
+    <p>For example:</p>
+    <pre>For example, 
+d1 = {1:12, 3:4, 2:5}
+d2 = {1:6, 3:8, 0:9}
+d3 = {3:0, 1:11, 2:3}
+Ld = [d1, d2, d3]
+print(common(Ld)) # prints the dictionary {1:12, 3:8} </pre>
+    <p>Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <grader_payload>
+{"grader": "quiz/60001_f2018/common/grade_common_student.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>Note: An L379 or L397 error:</b> means that your code has an infinite loop for some test case. You will receive a zero for this problem if your code has an infinite loop.
+  </p>
+  <p><b>Note on Score Shown:</b> Your code will ultimately be run on our test cases. Getting "Correct"/green check during the exam does not mean you will get full points. The test cases here ensures you do not have a copy/paste error from your IDE.
+  </p>
+</problem>

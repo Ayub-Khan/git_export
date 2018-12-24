@@ -1,0 +1,13 @@
+<video youtube="1.00:PoqZDZeY5LM" url_name="b19a9909b7754fffbbd686a20b4a1ce3" sub="" transcripts="{&quot;en&quot;: &quot;d061d6ef-abba-4f79-bc10-395cbca4e7fa-en.srt&quot;}" display_name="Video: Debugging" download_track="true" download_video="true" edx_video_id="d061d6ef-abba-4f79-bc10-395cbca4e7fa" handout="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture7.zip" html5_sources="[]" youtube_id_1_0="PoqZDZeY5LM">
+  <handout src="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture7.zip"/>
+  <video_asset client_video_id="L7_S4.mp4" duration="438.04" image="">
+    <encoded_video bitrate="245" file_size="13440740" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V005000_MB2.mp4"/>
+    <encoded_video bitrate="282" file_size="15454526" profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V005000_MB1.mp4"/>
+    <encoded_video bitrate="482" file_size="26425033" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V005000_DTH.mp4"/>
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="PoqZDZeY5LM"/>
+    <transcripts>
+      <transcript file_format="srt" language_code="en" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="d061d6ef-abba-4f79-bc10-395cbca4e7fa-en.srt"/>
+</video>

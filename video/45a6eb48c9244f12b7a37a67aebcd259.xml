@@ -1,0 +1,13 @@
+<video youtube="1.00:z2NLjdfxEyQ" url_name="45a6eb48c9244f12b7a37a67aebcd259" sub="" transcripts="{&quot;en&quot;: &quot;3a50e314-04d3-41f3-8204-05b7665d7f63-en.srt&quot;}" display_name="Video: Variables" download_track="true" download_video="true" edx_video_id="3a50e314-04d3-41f3-8204-05b7665d7f63" handout="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture1.zip" html5_sources="[]" youtube_id_1_0="z2NLjdfxEyQ">
+  <handout src="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture1.zip"/>
+  <video_asset client_video_id="L1_S6.mov" duration="350.51" image="">
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="z2NLjdfxEyQ"/>
+    <encoded_video bitrate="283" file_size="12408856" profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V000200_MB1.mp4"/>
+    <encoded_video bitrate="247" file_size="10851990" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V000200_MB2.mp4"/>
+    <encoded_video bitrate="445" file_size="19500536" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V000200_DTH.mp4"/>
+    <transcripts>
+      <transcript file_format="srt" language_code="en" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="3a50e314-04d3-41f3-8204-05b7665d7f63-en.srt"/>
+</video>

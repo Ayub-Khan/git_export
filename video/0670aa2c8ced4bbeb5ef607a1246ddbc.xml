@@ -1,0 +1,13 @@
+<video youtube="1.00:oUG_oONIZDk" url_name="0670aa2c8ced4bbeb5ef607a1246ddbc" sub="" transcripts="{&quot;en&quot;: &quot;a582a7a6-0579-4c15-a27e-d7f91f8502f2-en.srt&quot;}" display_name="Video: Keyword Arguments" download_track="true" download_video="true" edx_video_id="a582a7a6-0579-4c15-a27e-d7f91f8502f2" handout="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture4.zip" html5_sources="[]" youtube_id_1_0="oUG_oONIZDk">
+  <handout src="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture4.zip"/>
+  <video_asset client_video_id="L4_S4.mov" duration="220.61" image="">
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="oUG_oONIZDk"/>
+    <encoded_video bitrate="244" file_size="6755138" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002100_MB2.mp4"/>
+    <encoded_video bitrate="281" file_size="7759816" profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002100_MB1.mp4"/>
+    <encoded_video bitrate="434" file_size="11991588" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002100_DTH.mp4"/>
+    <transcripts>
+      <transcript file_format="srt" language_code="en" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="a582a7a6-0579-4c15-a27e-d7f91f8502f2-en.srt"/>
+</video>

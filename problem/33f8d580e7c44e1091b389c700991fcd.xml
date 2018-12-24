@@ -1,0 +1,51 @@
+<problem display_name="Problem 2" markdown="null" max_attempts="10" showanswer="past_due" weight="1.0">
+  <text>
+    <p>
+      Write a Python function that returns the length of the shortest list within the list <code>L</code>, or returns None if <code>L</code> does not contain a list.  You should assume that <code>L</code> is a list, each of whose elements is either a list or an integer. For example, if <code>L = [1, [], [1,2]]</code> it returns 0 because <code>L</code> contains a list of length 0.</p>
+    <pre>def getShortest(L):
+    '''
+    Assumes: L is a list, each element of which is either a list or an int
+    Effects: Returns None if L does not contain a list, otherwise returns
+    the length of the shortest list in L. E.g., if L = [1, [], [1,2]] it
+    returns 0.
+    '''
+    # Your code here
+    </pre>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def getShortest(L):
+    '''
+    Assumes: L is a list, each element of which is either a list or an int
+    Effects: Returns None if L does not contain a list, otherwise returns
+    the length of the shortest list in L. E.g., if L = [1, [], [1,2]] it
+    returns 0.
+    '''
+    # Your code here
+      </initial_display>
+      <answer_display>
+def getShortest(L):
+    '''
+    Assumes: L is a list, each element of which is either a list or an int
+    Effects: Returns None if L does not contain a list, otherwise returns
+    the length of the shortest list in L. E.g., if L = [1, [], [1,2]] it
+    returns 0.
+    '''    
+    minLen = None
+    for e in L:
+        if type(e) == list and (minLen == None or len(e) &lt; minLen):
+            minLen = len(e)
+    return minLen      
+	  </answer_display>
+      <grader_payload>
+		{"grader": "microquiz/f2017/quiz2/get_shortest/grade_get_shortest_student.py"}
+	  </grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>Note: An L379 or L397 error:</b> means that your code has an infinite loop for some test case. You will receive a zero for this problem if your code has an infinite loop.
+  </p>
+  <p><b>Note on Score Shown:</b> Your code will ultimately be run on our test cases. Getting "Correct"/green check during the exam does not mean you will get full points. The test cases here ensure you do not have a copy/paste error from your IDE.
+  </p>
+</problem>

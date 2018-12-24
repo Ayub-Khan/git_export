@@ -1,0 +1,33 @@
+<problem display_name="Problem 1" markdown="null" max_attempts="0" showanswer="never" weight="4.0">
+  <text>
+    <p>
+      <i>
+      Write a Python function that meets the following specification:</i>
+    </p>
+    <pre>def dot_product(list_a, list_b):
+    """
+    list_a and list_b, equal length lists of numbers
+    Returns the sum of the pairwise products of list_a and list_b. 
+    """
+</pre>
+    <p>For example, if <code>list_a = [1, 2, 3]</code> and <code>list_b = [4, 5, 6]</code>, the dot product is <code>1*4 + 2*5 + 3*6</code>, meaning that <code>dot_product(list_a, list_b)</code> returns <code>32</code>. 
+   
+    </p>
+    <p>
+Enter your definition for the function. Click the blue Submit button to make sure that you copied your code correctly and that it passes our basic tests.
+    </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <grader_payload>
+        {"grader": "microquiz/s2018/quiz2/dot_product/grade_dot_product_student.py"}
+	</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>Note: An L379 or L397 error:</b> means that your code has an infinite loop for some test case. You will receive a zero for this problem if your code has an infinite loop.
+  </p>
+  <p><b>Note on Score Shown:</b> Your code will ultimately be run on our test cases. Getting "Correct"/green check during the exam does not mean you will get full points. The test cases here ensures you do not have a copy/paste error from your IDE.
+  </p>
+</problem>

@@ -1,0 +1,40 @@
+<problem display_name="Problem 2 of 2" markdown="null" max_attempts="10" showanswer="never" weight="6.0">
+  <text>
+    <p>
+      <font color="red">Don't forget to checkout on the last page when you finished the quiz.</font>
+    </p>
+    <p>
+     
+      Write a Python function that meets the following specification:
+    </p>
+    <pre>def is_in(inner, outer):
+    """
+    inner and outer: lists of ints
+    Returns a list containing elements in inner that are not in outer.
+    If all elements in inner are also in outer, returns the empty list.
+    The list returned should be sorted in ascending order.
+    """
+</pre>
+    <p>For example,</p>
+    <ul>
+      <li>If <code>inner = [4,4]</code> and <code>outer = [2,4,6]</code>, then <code>is_in(inner, outer)</code> returns <code>[]</code>. </li>
+      <li>If <code>inner = [6,4,4]</code> and <code>outer = [2,3,0]</code>, then <code>is_in(inner, outer)</code> returns <code>[4,4,6]</code>. </li>
+    </ul>
+    <p>
+Enter your definition for the function. Click the blue Submit button to make sure that you copied your code correctly and that it passes our basic tests.
+    </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <grader_payload>
+        {"grader": "microquiz/f2018/quiz2/is_in/grade_is_in_student.py"}
+	</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>Note: An L379 or L397 error:</b> means that your code has an infinite loop for some test case. You will receive a zero for this problem if your code has an infinite loop.
+  </p>
+  <p><b>Note on Score Shown:</b> Your code will ultimately be run on our test cases. Getting "Correct"/green check during the exam does not mean you will get full points. The test cases here ensures you do not have a copy/paste error from your IDE.
+  </p>
+</problem>

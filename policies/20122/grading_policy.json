@@ -1,0 +1,21 @@
+{
+    "GRADER": [
+        {
+            "drop_count": 0, 
+            "min_count": 8, 
+            "short_label": "fex", 
+            "type": "Finger Exercises", 
+            "weight": 0.1
+        }, 
+        {
+            "drop_count": 1, 
+            "min_count": 3, 
+            "short_label": "quiz", 
+            "type": "Quiz", 
+            "weight": 0.2
+        }
+    ], 
+    "GRADE_CUTOFFS": {
+        "Pass": 0.5
+    }
+}

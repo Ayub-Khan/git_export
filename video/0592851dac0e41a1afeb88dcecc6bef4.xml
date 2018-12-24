@@ -1,0 +1,13 @@
+<video youtube="1.00:Gur2OUe8Was" url_name="0592851dac0e41a1afeb88dcecc6bef4" sub="" transcripts="{&quot;en&quot;: &quot;a7683982-408d-40bc-a1e3-6bdffc1d097f-en.srt&quot;}" display_name="Video: Recursion Complexity" download_track="true" download_video="true" edx_video_id="a7683982-408d-40bc-a1e3-6bdffc1d097f" handout="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture11.zip" html5_sources="[]" youtube_id_1_0="Gur2OUe8Was">
+  <handout src="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture11.zip"/>
+  <video_asset client_video_id="L11_S6.mp4" duration="486.67" image="">
+    <encoded_video bitrate="248" file_size="15130374" profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006900_MB1.mp4"/>
+    <encoded_video bitrate="218" file_size="13270145" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006900_MB2.mp4"/>
+    <encoded_video bitrate="384" file_size="23365917" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V006900_DTH.mp4"/>
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="Gur2OUe8Was"/>
+    <transcripts>
+      <transcript file_format="srt" language_code="en" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="a7683982-408d-40bc-a1e3-6bdffc1d097f-en.srt"/>
+</video>

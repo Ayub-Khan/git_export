@@ -1,0 +1,33 @@
+<problem display_name="Problem 3" markdown="null" max_attempts="10" showanswer="never">
+  <text>
+    <p>
+      Write a piece of Python code that, given the integer variable <code>N</code>, counts the
+number of positive divisors <code>N</code> has and prints the result. Remember to count 1
+      and N.</p>
+    <p>For example, if we define <code>N</code> to be 24, your code should print out the result:
+<code>Number of divisors: 8</code> because 24 has 1, 2, 3, 4, 6, 8, 12, and 24 as divisors.</p>
+    <p>Hint: The % operator is useful for this problem.</p>
+    <p>For problems such as these, do not include <code>input</code> statements or define the
+variables we give you. Our automated testing will provide values for you, so
+  write your code in the following box assuming they are already defined.
+    </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+cnt = 0
+for i in range(1, N+1):
+    if N % i == 0:
+        cnt += 1
+print "Number of divisors:", cnt</answer_display>
+      <grader_payload>
+        {"grader": "finger_exercises/L3/divisor_count/grade_divisor_count.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p>
+    <b>During the actual exam, you will only see one or two test cases.  </b>
+  </p>
+</problem>

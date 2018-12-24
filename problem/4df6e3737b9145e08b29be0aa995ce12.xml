@@ -1,0 +1,112 @@
+<problem display_name="Exercise 2" markdown="null">
+  <script type="text/python" system_path="python_lib">
+def test_cal(expect, ans):
+    expect=float(expect); ans = float(ans)
+    return ((expect - 0.001) &lt;= ans) and (ans &lt;= (expect + 0.001))
+def test_sim(expect, ans):
+    expect=float(expect); ans = float(ans)
+    return ((expect - 0.04) &lt;= ans) and (ans &lt;= (expect + 0.04))
+</script>
+  <text>
+    <p>For this problem, download <a href="/static/files_finger_exercises_intDictTests.py" target="_blank">intDictTests.py</a>, a file that contains some simulations that will help us examine the properties of hashing.</p>
+    <p>Read through the extra functions to understand what they do; call the appropriate function with the right parameters to answer the following questions.</p>
+    <ol>
+      <li>
+        <p> If our hash table has 1000 buckets and we perform 50 insertions, what is the calculated probability of a collision? Answer to at least 3 decimal places.</p>
+        <p>
+          <customresponse cfn="test_cal" expect=".712">
+            <textline size="20" correct_answer="0.712"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p> If our hash table has 1000 buckets and we perform 200 insertions,
+	what is the calculated probability of a collision? Answer to at least 3 decimal places.</p>
+        <p>
+          <customresponse cfn="test_cal" expect=".999">
+            <textline size="20" correct_answer=".999"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p> If our hash table has 1000 buckets and we perform 50 insertions,
+	perform a simulation to observe the probability of a collision. Run
+	for at least 1000 trials; answer to at least 3 decimal places.</p>
+        <p>
+          <customresponse cfn="test_sim" expect=".7">
+            <textline size="20"/>
+          </customresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Correct Answer</b>
+              </p>
+              <p>0.7 +/- 0.040</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p> If our hash table has 1000 buckets and we perform 200 insertions,
+	perform a simulation to observe the probability of a collision. Run
+	for at least 1000 trials; answer to at least 3 decimal places.</p>
+        <p>
+          <customresponse cfn="test_sim" expect="1.0">
+            <textline size="20"/>
+          </customresponse>
+        </p>
+        <p>
+          <solution>
+            <div class="detailed-solution">
+              <p>
+                <b>Correct Answer</b>
+              </p>
+              <p>1.0 +/- 0.001</p>
+            </div>
+          </solution>
+        </p>
+      </li>
+      <li>
+        <p>Say you're in a classroom with 29 other students (30 total students). What is the calculated probability that two students share the same birthdate? For simplicity, assume there are 365 days in a year and all birthdates are equally probable. Answer to at least 3 decimal places.</p>
+        <p>
+          <customresponse cfn="test_cal" expect=".706">
+            <textline size="20" correct_answer="0.706"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>Say you're in a lecture hall with 249 other students (250 total students). What is the calculated probability that two students share the same birthdate? For simplicity, assume there are 365 days in a year and all birthdates are equally probable. Answer to at least 3 decimal places.</p>
+        <p>
+          <customresponse cfn="test_cal" expect="1.0">
+            <textline size="20" correct_answer="1.0"/>
+          </customresponse>
+        </p>
+      </li>
+      <li>
+        <p>What's the largest classroom size where the probability of two students sharing the same birthday is less than 0.99? Hint: either write a function that loops through values and finds this for you, or perform a manual bisection search.</p>
+        <p>
+          <stringresponse answer="56">
+            <textline size="20"/>
+          </stringresponse>
+        </p>
+      </li>
+    </ol>
+    <p>Further reading: in this problem we calculated the probability of same birthdays in a very simplistic manner. For more depth on this problem, see <a href="http://en.wikipedia.org/wiki/Birthday_problem" target="_blank">this Wikipedia page</a>.</p>
+    <section class="hints">
+      <div class="collapsible">
+        <header>
+          <a href="#" id="ht1">Hint (if you need it): What Functions to Call</a>
+        </header>
+        <section id="ht1">
+          <p>
+            <b>Functions To Call</b>
+          </p>
+          <p>For problems 1, 2, 5, 6, and 7, you should be making calls to the function <code>collision_prob</code>.</p>
+          <p>For problems 3 and 4, you should be making calls to the function <code>observe_prob</code>.</p>
+        </section>
+      </div>
+    </section>
+  </text>
+</problem>

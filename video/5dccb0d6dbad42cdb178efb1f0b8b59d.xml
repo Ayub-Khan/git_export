@@ -1,0 +1,13 @@
+<video youtube="1.00:UAvednvGZ-8" url_name="5dccb0d6dbad42cdb178efb1f0b8b59d" sub="" transcripts="{&quot;en&quot;: &quot;f8eb2f5d-f874-4b0b-97d1-c1e59ebf8015-en.srt&quot;}" display_name="Video: Functions and Scope" download_track="true" download_video="true" edx_video_id="f8eb2f5d-f874-4b0b-97d1-c1e59ebf8015" handout="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture4.zip" html5_sources="[]" youtube_id_1_0="UAvednvGZ-8">
+  <handout src="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture4.zip"/>
+  <video_asset client_video_id="L4_S2.mov" duration="358.78" image="">
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="UAvednvGZ-8"/>
+    <encoded_video bitrate="246" file_size="11068893" profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002200_MB1.mp4"/>
+    <encoded_video bitrate="221" file_size="9921808" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002200_MB2.mp4"/>
+    <encoded_video bitrate="374" file_size="16798108" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002200_DTH.mp4"/>
+    <transcripts>
+      <transcript file_format="srt" language_code="en" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="f8eb2f5d-f874-4b0b-97d1-c1e59ebf8015-en.srt"/>
+</video>

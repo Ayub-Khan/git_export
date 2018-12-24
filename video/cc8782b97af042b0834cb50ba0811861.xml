@@ -1,0 +1,13 @@
+<video youtube="1.00:vrs7bZDPolo" url_name="cc8782b97af042b0834cb50ba0811861" sub="" transcripts="{&quot;en&quot;: &quot;677ba0bc-4786-4cc4-8a3b-54a49222701e-en.srt&quot;}" display_name="Video: Assertions" download_track="true" download_video="true" edx_video_id="677ba0bc-4786-4cc4-8a3b-54a49222701e" handout="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture8.zip" html5_sources="[]" youtube_id_1_0="vrs7bZDPolo">
+  <handout src="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture8.zip"/>
+  <video_asset client_video_id="L8_S4.mp4" duration="350.39" image="">
+    <encoded_video bitrate="242" file_size="10606849" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V004500_MB2.mp4"/>
+    <encoded_video bitrate="278" file_size="12214758" profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V004500_MB1.mp4"/>
+    <encoded_video bitrate="474" file_size="20788842" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V004500_DTH.mp4"/>
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="vrs7bZDPolo"/>
+    <transcripts>
+      <transcript file_format="srt" language_code="en" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="677ba0bc-4786-4cc4-8a3b-54a49222701e-en.srt"/>
+</video>

@@ -1,0 +1,29 @@
+<problem display_name="Exercise 1" markdown="null" showanswer="correct_or_past_due" weight="0.5">
+  <text>
+    <p>
+Write a piece of Python code that, given a positive integer <code>N</code> (e.g. 27 or 64),
+finds the cube root of <code>N</code> and prints it if <code>N</code> is a perfect cube or prints <code>error</code>
+if <code>N</code> is not a perfect cube. To do so, write a loop that increments a counter
+      until the cube of the counter is equal to <code>N</code>.</p>
+    <p>For problems such as these, do not include <code>input</code> statements or define variables we said you are given. Our graders will provide values for you, so write your code assuming they are already defined.
+    </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+i = 1
+while i**3 &lt; N:
+    i += 1
+
+if i**3 == N:
+    print(i)
+else:
+    print('error')</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L3/cube_root/grade_cube_root.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

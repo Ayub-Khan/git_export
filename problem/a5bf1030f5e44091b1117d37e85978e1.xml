@@ -1,0 +1,51 @@
+<problem display_name="Problem 5" markdown="null" max_attempts="10" showanswer="past_due" weight="15.0">
+  <text>
+    <p>
+      <b>
+        <font color="red">If you are done the exam, <a href="https://docs.google.com/forms/d/1AdYcxsYphMEOvfNaoZ9_phU6oedIksZQYDTxbl3lCJA/edit?usp=drive_web" target="_blank">click here to checkout</a>. Only checkout once to remove your quiz access. <br/> If you do not checkout you will receive a zero on the exam.</font>
+      </b>
+    </p>
+    <p>
+      Implement a function that meets the specifications below. </p>
+    <pre>def binToInt(s):
+    """
+    assumes: s is a str containing only 0's and 1's
+    returns the int corresponding to the binary number
+    represented by s. If s is empty, returns 0.
+    """</pre>
+    <p/>
+    <p>For example, the following code should print <code>10</code> twice.<br/>
+   
+    <pre>
+      print(binToInt('1010'))
+      print(binToInt('01010'))</pre>
+    </p>
+    <p>Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <answer_display>
+def binToInt(s):
+"""
+assumes: s is a str containing only 0's and 1's
+returns the int corresponding to the binary number
+represented by s. If s is empty, returns 0.
+"""
+res = 0
+indx = 0
+while indx &lt; len(s):
+    res += int(s[indx])*2**(len(s)-1-indx)
+    indx += 1
+return res
+      </answer_display>
+      <grader_payload>
+{"grader": "quiz/60001_f2017/binToInt/grade_bin_to_int_student.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>Note: An L379 or L397 error:</b> means that your code has an infinite loop for some test case. You will receive a zero for this problem if your code has an infinite loop.
+  </p>
+  <p><b>Note on Score Shown:</b> Your code will ultimately be run on our test cases. Getting "Correct"/green check during the exam does not mean you will get full points. The test cases here ensure you do not have a copy/paste error from your IDE.
+  </p>
+</problem>

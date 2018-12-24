@@ -1,0 +1,105 @@
+<problem display_name="Problem 1" markdown="null" showanswer="never">
+  <text>
+    <p>
+      <b>Note: All answers are marked as "Correct"</b>
+    </p>
+    <ol class="enumerate">
+      <li>
+        <p>What does it mean when we say that 
+	  "the computer walks through the sequence executing some computation"?</p>
+        <multiplechoiceresponse>
+          <choicegroup label="1" type="MultipleChoice">
+            <choice correct="true">The computer tests each instruction to ensure it will not harm the circuitry.</choice>
+            <choice correct="true">The computer executes the instructions in strict, linear sequence, just like walking in a straight line.</choice>
+            <choice correct="true">The computer executes the instructions mostly in a  linear sequence, except sometimes it jumps to a different place in the sequence.</choice>
+            <choice correct="true">The computer slowly executes instructions so that we can follow its progress, rather than running a program at full speed.</choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+      </li>
+      <li>
+        <p>For the expression <code>'a'*3</code> what is the type of the value returned?</p>
+        <multiplechoiceresponse>
+          <choicegroup label="1" type="MultipleChoice">
+            <choice correct="true">int</choice>
+            <choice correct="true">float</choice>
+            <choice correct="true">string</choice>
+            <choice correct="true">The expression leads to an error.</choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+      </li>
+      <li>
+        <p>For the function call below, what is the type of the value returned?</p>
+        <pre>def a(x, y, z):
+    if x:
+        return y
+    else:
+        return z
+a(3&gt;2, 3.0, 3)</pre>
+        <multiplechoiceresponse>
+          <choicegroup label="1" type="MultipleChoice">
+            <choice correct="true">int</choice>
+            <choice correct="true">float</choice>
+            <choice correct="true">string</choice>
+            <choice correct="true">The expression leads to an error.</choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+      </li>
+      <li>
+        <p>In a Python program, you can have a variable named <code>return</code>, e.g., <code>return = 5</code>.
+</p>
+        <multiplechoiceresponse>
+          <choicegroup label="1" type="MultipleChoice">
+            <choice correct="true">True</choice>
+            <choice correct="true">False</choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+      </li>
+      <li>
+        <p>A function is an example of decomposition but not abstraction.</p>
+        <multiplechoiceresponse>
+          <choicegroup label="1" type="MultipleChoice">
+            <choice correct="true">True</choice>
+            <choice correct="true">False</choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+      </li>
+      <li>
+        <p>The dictionary <code>{'a':'1', 'b':'2', 'c': '3'}</code> has a mapping of <code>string:int</code></p>
+        <multiplechoiceresponse>
+          <choicegroup label="1" type="MultipleChoice">
+            <choice correct="true">True</choice>
+            <choice correct="true">False</choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+      </li>
+      <li>
+        <p> In a bisection search, the number of points to be examined is reduced by one each iteration.
+</p>
+        <multiplechoiceresponse>
+          <choicegroup label="1" type="MultipleChoice">
+            <choice correct="true">True</choice>
+            <choice correct="true">False</choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+      </li>
+      <li>
+        <p>The <code>sort</code> method of list has a side effect. </p>
+        <multiplechoiceresponse>
+          <choicegroup label="1" type="MultipleChoice">
+            <choice correct="true">True</choice>
+            <choice correct="true">False</choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+      </li>
+      <li>
+        <p>In Python, assignment can change the value of an object.</p>
+        <multiplechoiceresponse>
+          <choicegroup label="1" type="MultipleChoice">
+            <choice correct="true">True</choice>
+            <choice correct="true">False</choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+      </li>
+    </ol>
+  </text>
+</problem>

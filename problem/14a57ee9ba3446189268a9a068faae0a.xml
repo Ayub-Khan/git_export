@@ -1,0 +1,36 @@
+<problem display_name="Problem 1" markdown="null" showanswer="never" weight="4.0">
+  <p>
+    <font color="red">Don't forget to checkout on the last page when you finished the quiz.</font>
+  </p>
+  <p>The following multiple choice questions will <font color="blue">mark anything you put in as correct</font>.</p>
+  <ol>
+    <li>
+      <multiplechoiceresponse>
+        <label>You run the bisection search code given in class to find an integer in a list of integers. <b>The list is unordered.</b> Which one of the following is true?</label>
+        <choicegroup type="MultipleChoice">
+          <choice correct="true">The program always gives the wrong answer.</choice>
+          <choice correct="true">The program might give the wrong answer.</choice>
+          <choice correct="true">The program will not terminate.</choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </li>
+    <li>
+      <multiplechoiceresponse>
+        <label>Given the following code, which one of the following is true when the execution hits <code>#POINT1</code> and <code>#POINT2</code>:</label>
+        <pre>A = [1,1]
+B = A
+#POINT1
+for e in B:
+    A = A + A
+#POINT2
+</pre>
+        <choicegroup type="MultipleChoice">
+          <choice correct="true">At <code>#POINT1</code>, <code>A</code> is an alias for <code>B</code> and at <code>#POINT2</code>, <code>A</code> is an alias for <code>B</code>.</choice>
+          <choice correct="true">At <code>#POINT1</code>, <code>A</code> is an alias for <code>B</code> and at <code>#POINT2</code>, <code>A</code> is NOT an alias for <code>B</code>.</choice>
+          <choice correct="true">At <code>#POINT1</code>, <code>A</code> is NOT an alias for <code>B</code> and at <code>#POINT2</code>, <code>A</code> is an alias for <code>B</code>.</choice>
+          <choice correct="true">At <code>#POINT1</code>, <code>A</code> is NOT an alias for <code>B</code> and at <code>#POINT2</code>, <code>A</code> is NOT an alias for <code>B</code>.</choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </li>
+  </ol>
+</problem>

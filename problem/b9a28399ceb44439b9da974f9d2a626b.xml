@@ -1,0 +1,40 @@
+<problem display_name="Problem 2" markdown="null" max_attempts="0" showanswer="never" weight="6.0">
+  <text>
+    <p>
+      <i>
+      Write a Python function that meets the following specification:</i>
+    </p>
+    <pre>def apply_func_to_list(func, L):
+    """
+    func, function that takes in an integer and returns another integer
+    L, list of integers
+    Returns a tuple with two elements. 
+    The first element is a new list, L_new. L_new is the same length as L, 
+    and its element at index i is the function func applied to L[i].
+    The second element is the maximum element in L_new.
+    """
+</pre>
+    <p>For example, if </p>
+    <pre>def add_one(a):
+    return a+1</pre>
+    <p>then <code>apply_func_to_list(add_one, [1,2,3,4])</code> returns the tuple <code>([2,3,4,5], 5)</code> 
+   
+    </p>
+    <p>
+Enter your definition for the function. Click the blue Submit button to make sure that you copied your code correctly and that it passes our basic tests.
+    </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <grader_payload>
+        {"grader": "microquiz/s2018/quiz2/apply_func_to_list/grade_apply_func_to_list_student.py"}
+	</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>Note: An L379 or L397 error:</b> means that your code has an infinite loop for some test case. You will receive a zero for this problem if your code has an infinite loop.
+  </p>
+  <p><b>Note on Score Shown:</b> Your code will ultimately be run on our test cases. Getting "Correct"/green check during the exam does not mean you will get full points. The test cases here ensures you do not have a copy/paste error from your IDE.
+  </p>
+</problem>

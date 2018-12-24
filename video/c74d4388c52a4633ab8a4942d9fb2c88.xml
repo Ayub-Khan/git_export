@@ -1,0 +1,13 @@
+<video youtube="1.00:7-8dQnky4to" url_name="c74d4388c52a4633ab8a4942d9fb2c88" sub="" transcripts="{&quot;en&quot;: &quot;aa027ad2-208c-406b-bf88-5e4f86dfb760-en.srt&quot;}" display_name="Video: Bugs" download_track="true" download_video="true" edx_video_id="aa027ad2-208c-406b-bf88-5e4f86dfb760" handout="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture7.zip" html5_sources="[]" youtube_id_1_0="7-8dQnky4to">
+  <handout src="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture7.zip"/>
+  <video_asset client_video_id="L7_S3.mp4" duration="310.06" image="">
+    <encoded_video bitrate="419" file_size="16268727" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V004800_DTH.mp4"/>
+    <encoded_video bitrate="261" file_size="10139431" profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V004800_MB1.mp4"/>
+    <encoded_video bitrate="228" file_size="8851165" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX60012016-V004800_MB2.mp4"/>
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="7-8dQnky4to"/>
+    <transcripts>
+      <transcript file_format="srt" language_code="en" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="aa027ad2-208c-406b-bf88-5e4f86dfb760-en.srt"/>
+</video>

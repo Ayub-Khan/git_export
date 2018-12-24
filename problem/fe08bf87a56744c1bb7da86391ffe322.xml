@@ -1,0 +1,71 @@
+<problem display_name="Exercise 1" markdown="null" max_attempts="3" showanswer="correct_or_past_due" weight="0.0">
+  <text>
+    <p>
+Consider the following Python procedures. For simplicity, assume all string operations are O(1). For each procedure, specify its order of growth. </p>
+    <ol class="enumerate">
+      <li>
+        <pre>
+def lenRecur(s):
+   if s == '':
+      return 0
+   else:
+      return 1 + lenRecur(s[1:])
+ </pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('O(1)','O(log(s))','O(log(len(s)))','O(s)','O(len(s))','O(s log(s))','O(len(s)^2)')" correct="O(len(s))"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+def isInCorrected(a, s):
+   '''
+   a is a character, or, singleton string.
+   s is a string, sorted in alphabetical order.
+   '''
+   if len(s) == 0:
+      return False
+   elif len(s) == 1:
+      return a == s
+   else:
+      test = s[len(s)/2]
+      if test == a:
+         return True
+      elif a &lt; test:
+          return isInCorrected(a, s[:len(s)//2])
+      else:
+          return isInCorrected(a, s[len(s)//2+1:])
+ </pre>
+        <p>
+          <optionresponse>
+            <optioninput options="('O(1)','O(log(s))','O(log(len(s)))','O(s)','O(len(s))','O(len(s) log(len(s)))','O(len(s)^2)')" correct="O(log(len(s)))"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <pre>
+def union(L1, L2):
+   '''
+   L1 &amp; L2 are lists of the same length, n
+   '''
+   temp = L1[:]
+   for e2 in L2:
+      flag = False
+      for check in temp:
+         if e2 == check:
+            flag = True
+            break
+      if not flag:
+         temp.append(e2)
+   return temp
+ </pre>
+        <p>
+ For this problem, assume [mathjaxinline]n[/mathjaxinline] = len(L1) = len(L2) <optionresponse><optioninput options="('O(1)','O(log(n))','O(n)','O(n log(n))','O(n^2)','O(n^3)','O(2^n)')" correct="O(n^2)"/></optionresponse> </p>
+      </li>
+    </ol>
+    <p>
+      <font color="red">You only get 3 tries to submit your answers.</font>
+    </p>
+  </text>
+</problem>

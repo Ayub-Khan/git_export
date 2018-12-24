@@ -1,0 +1,13 @@
+<video youtube="1.00:VYX8ia9Q8IY" url_name="073ff1a6b1334e7fa16233de64575c22" sub="" transcripts="{&quot;en&quot;: &quot;a9e1c282-9571-45a2-978e-c186ed766939-en.srt&quot;}" display_name="Video: Newton-Raphson" download_track="true" download_video="true" edx_video_id="a9e1c282-9571-45a2-978e-c186ed766939" handout="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture3.zip" html5_sources="[]" youtube_id_1_0="VYX8ia9Q8IY">
+  <handout src="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture3.zip"/>
+  <video_asset client_video_id="L3_S5.mov" duration="319.21" image="">
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="VYX8ia9Q8IY"/>
+    <encoded_video bitrate="232" file_size="9269289" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V001800_MB2.mp4"/>
+    <encoded_video bitrate="262" file_size="10480464" profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V001800_MB1.mp4"/>
+    <encoded_video bitrate="393" file_size="15688328" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V001800_DTH.mp4"/>
+    <transcripts>
+      <transcript file_format="srt" language_code="en" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="a9e1c282-9571-45a2-978e-c186ed766939-en.srt"/>
+</video>

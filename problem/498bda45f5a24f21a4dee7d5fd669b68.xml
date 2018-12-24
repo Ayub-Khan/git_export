@@ -1,0 +1,33 @@
+<problem display_name="Problem 6" markdown="null" max_attempts="10" showanswer="never" weight="10.0">
+  <text>
+    <p>
+      <b>
+        <font color="red">If you are done the exam, <a href="https://docs.google.com/forms/d/1mMEeZz2KBcBZHbQA_Fu9DrclOoIHwsuIT9YF2uqG5ts/" target="_blank">click here to checkout</a>. Only checkout once to remove your quiz access. <br/> If you do not checkout you will receive a zero on the exam.</font>
+      </b>
+    </p>
+    <p>Write a function that implements the specification below.</p>
+    <pre>def my_calc(x, b):
+    """  x: a positive integer
+         b: a positive integer; b &gt;= 2
+    Returns an integer n, where n is the largest power 
+    of b such that b**n is less than or equal to x. """
+    # your code here
+</pre>
+    <p>For example:</p>
+    <pre>print(my_ calc(16,2)) # prints 4
+print(my_ calc(15, 3)) # prints 2</pre>
+    <p>Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <grader_payload>
+{"grader": "quiz/60001_f2018/my_calc/grade_my_calc_student.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>Note: An L379 or L397 error:</b> means that your code has an infinite loop for some test case. You will receive a zero for this problem if your code has an infinite loop.
+  </p>
+  <p><b>Note on Score Shown:</b> Your code will ultimately be run on our test cases. Getting "Correct"/green check during the exam does not mean you will get full points. The test cases here ensures you do not have a copy/paste error from your IDE.
+  </p>
+</problem>

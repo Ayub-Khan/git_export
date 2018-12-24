@@ -1,0 +1,40 @@
+<problem display_name="Problem 4" markdown="null" max_attempts="10" showanswer="never" weight="20.0">
+  <text>
+    <p>
+      <b>
+        <font color="red">If you are done the exam, <a href="https://docs.google.com/forms/d/1w9mV5nWGb4Wexo2KzBIUumc8n3n-sII3_X2w6MVMrbI/edit?usp=drive_web" target="_blank">click here to checkout</a>. Only checkout once to remove your quiz access. <br/> If you do not checkout you will receive a zero on the exam.</font>
+      </b>
+    </p>
+    <p>You are given a dictionary <code>aDict</code> that maps integer keys to string values. Write a Python function called <code>unique_values</code> that returns a list of the integer keys in <code>aDict</code> that map to string values that appear exactly once in <code>aDict</code>.</p>
+    <p>This function takes in a dictionary and returns a list. It returns the list of keys in <b>increasing order</b>.</p>
+    <ul>
+      <li>If <code>aDict</code> does not contain any values appearing exactly once, return an empty list.</li>
+      <li>If <code>aDict</code> is empty, return an empty list.</li>
+    </ul>
+    <p>
+      For example: </p>
+    <ul>
+      <li>If <code>aDict = {1:'a',2:'b',3:'c',4:'c',5:'d'}</code> then your function returns <code>[1,2,5]</code>.</li>
+      <li>If <code>aDict = {1:'a',2:'a',3:'a'}</code> then your function returns <code>[]</code></li>
+    </ul>
+    <pre>def unique_values(aDict):
+    '''
+    aDict: a dictionary that maps ints to strings
+    Returns a sorted list of the keys that map to unique aDict values, empty list if no keys
+    '''
+    # YOUR CODE HERE
+
+</pre>
+    <p>Paste your entire function, including the definition, in the box below. Do not leave any print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="30" cols="70" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display># Paste your code here
+</initial_display>
+      <grader_payload>
+        {"grader": "quiz/60001_f2016/unique_values/grade_unique_values.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

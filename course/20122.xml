@@ -1,0 +1,37 @@
+<course advanced_modules="[&quot;word_cloud&quot;, &quot;poll&quot;, &quot;recommender&quot;, &quot;rapid_response&quot;]" advertised_start="null" allow_anonymous="false" allow_anonymous_to_peers="true" allow_unsupported_xblocks="true" cert_html_view_enabled="true" cert_name_long="Certificate" cert_name_short="Certificate" certificates="{&quot;certificates&quot;: [{&quot;course_title&quot;: &quot;&quot;, &quot;description&quot;: &quot;Description of the certificate&quot;, &quot;is_active&quot;: true, &quot;signatories&quot;: [{&quot;name&quot;: &quot;W. Eric L. Grimson&quot;, &quot;certificate&quot;: null, &quot;title&quot;: &quot;Bernard Gordon Professor of Medical Engineering\nChancellor for Academic Advancement&quot;, &quot;organization&quot;: &quot;Massachusetts Institute of Technology&quot;, &quot;signature_image_path&quot;: &quot;/asset-v1:MITx+6.00.1x+2T2016+type@asset+block@grimson_transparent.png&quot;, &quot;id&quot;: 242360236}, {&quot;name&quot;: &quot;John Guttag&quot;, &quot;certificate&quot;: null, &quot;title&quot;: &quot;Dugald C. Jackson Professor of \nComputer Science and Electrical Engineering&quot;, &quot;organization&quot;: &quot;Massachusetts Institute of Technology&quot;, &quot;signature_image_path&quot;: &quot;/asset-v1:MITx+6.00.1x+2T2016+type@asset+block@guttag_transparent.png&quot;, &quot;id&quot;: 972611790}, {&quot;name&quot;: &quot;Sanjay Sarma&quot;, &quot;certificate&quot;: null, &quot;title&quot;: &quot;Vice President for Open Learning&quot;, &quot;organization&quot;: &quot;Massachusetts Institute of Technology&quot;, &quot;signature_image_path&quot;: &quot;/asset-v1:MITx+6.00.1x+2T2016+type@asset+block@sarma_transparent.png&quot;, &quot;id&quot;: 10316411}], &quot;version&quot;: 1, &quot;editing&quot;: false, &quot;id&quot;: 1648446687, &quot;name&quot;: &quot;Name of the certificate&quot;}]}" course_image="Uncover4.png" days_early_for_beta="10.0" display_coursenumber="6.0001" display_name="Introduction to Computer Science and Programming Using Python" display_organization="MIT" edxnotes="true" end="&quot;2018-12-26T23:30:00+00:00&quot;" giturl="git@github.mit.edu:MITx-Studio2LMS/content-mit-60001r_8-2018_Fall.git" graceperiod="" info_sidebar_name="Course Links" instructor_info="{&quot;instructors&quot;: []}" language="en" learning_info="[]" minimum_grade_credit="0.65" mobile_available="true" show_reset_button="false" showanswer="attempted" start="&quot;2018-09-03T00:00:00+00:00&quot;" static_asset_path="content-mit-60001r_6-2017_Fall" video_upload_pipeline="{&quot;course_video_upload_token&quot;: &quot;08cb8505394811e681a6406c8fb7d690&quot;}">
+  <chapter url_name="c77f2cc9fb2a42589f0d723e8fefbd35"/>
+  <chapter url_name="1c8d53cae30c4c23ac63e06707befdc4"/>
+  <chapter url_name="c847c3e385d04d8993bd2e62d8298151"/>
+  <chapter url_name="1d54e65e3d0242628d89cd3380750126"/>
+  <chapter url_name="570e4f03a7ab4343855d0ae99349ea8b"/>
+  <chapter url_name="ba56a97bec464a53b44a41668cacbf12"/>
+  <chapter url_name="7ec52e5114c442beadc9d7044d28d84c"/>
+  <chapter url_name="982da45e77af427abdf67d6ee98ab482"/>
+  <chapter url_name="d83a61a5a1f14796b9792786588c2753"/>
+  <chapter url_name="4c25f7fc71354872bc121dbe79d26c31"/>
+  <chapter url_name="8daa90248d7b45c28e4cb3224e39ba0b"/>
+  <chapter url_name="3dcc8ac6a66b488c9940ffb77cd0a8a3"/>
+  <chapter url_name="1b1dc7ba6d8040498941621e1d72a70e"/>
+  <chapter url_name="67b8b933a85042fea4c798abe40e514b"/>
+  <chapter url_name="e0e80d0cb10044b1a48907103c5b3b3e"/>
+  <chapter url_name="43462ccad15e4d779c2fadcf298a38b4"/>
+  <chapter url_name="bd85c8748ccd441db439d07520910ff0"/>
+  <chapter url_name="5138de89371e406e9547b2b3c568fcec"/>
+  <chapter url_name="89251296d165419688b2948d69fc76ae"/>
+  <chapter url_name="80ed1624a83644fe95576b8e3f47fa91"/>
+  <chapter url_name="db533e88286c4ff593d0856cbf4a50ff"/>
+  <chapter url_name="e04a981f7d1c4371bd63b3f7561f81de"/>
+  <chapter url_name="7fea1688da3a4af3b8432508a4bec5fb"/>
+  <chapter url_name="ffb70911c95c4fae999e0e8b2dc75625"/>
+  <chapter url_name="47d859de1f9e45c5a7587d0009057aa9"/>
+  <chapter url_name="fc8f42302c644118adfcfa720f9f403e"/>
+  <chapter url_name="0de4fecc5a9a4749923133fcf4de181f"/>
+  <chapter url_name="530b7f9a82784d0cb57de334828e3050"/>
+  <chapter url_name="f0a19f0a8c2d49f3aa78ef3823845271"/>
+  <chapter url_name="ccbeba1bc4464a0c9e3b2146aef7d4f3"/>
+  <chapter url_name="c3b8ed5a5c8b4b589002370ad9d49a94"/>
+  <chapter url_name="ae4319bb721e4b00a5713797b0283809"/>
+  <chapter url_name="8f0f1f7142d043afbb1a9c0a0f900d59"/>
+  <chapter url_name="63199c498bd7403a9f2aa18fd2e91d74"/>
+  <wiki slug="MITx.6.0001r_6.2018_Spring"/>
+</course>

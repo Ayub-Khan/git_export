@@ -1,0 +1,42 @@
+<problem display_name="Exercise 1" markdown="null" showanswer="correct_or_past_due" weight="1.0">
+  <text>
+    <p>
+      Write a Python function that returns a list of keys in <code>aDict</code> with the value
+      <code>target</code>. The list of keys you return should be sorted. You may also assume
+that keys and values in <code>aDict</code> are integers or strings. (If <code>aDict</code> does not
+      contain the value <code>target</code>, you should return an empty list.)</p>
+    <p>This function takes in a dictionary and an integer or string and returns a sorted 
+  list.</p>
+    <pre>def keysWithValue(aDict, target):
+    '''
+    aDict: a dictionary
+    target: an integer or string
+    '''
+    # Your code here  </pre>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display>
+def keysWithValue(aDict, target):
+    '''
+    aDict: a dictionary
+    target: an integer or string
+    '''
+    # Your code here  
+      </initial_display>
+      <answer_display>
+def keysWithValue(aDict, target):
+    targetKeys = []
+    for i in aDict.keys():
+        if aDict[i] == target:
+            targetKeys.append(i)
+    targetKeys.sort()
+    return targetKeys
+</answer_display>
+      <grader_payload>
+        {"grader": "finger_exercises/L6/keys_with_value/grade_keys_with_value.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

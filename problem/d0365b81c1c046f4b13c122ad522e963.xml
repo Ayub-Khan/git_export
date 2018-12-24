@@ -1,0 +1,34 @@
+<problem display_name="Problem 2" markdown="null" max_attempts="0" showanswer="never" weight="7.0">
+  <text>
+    <p>
+      <i>
+      Given variables <code>base</code> and <code>num</code> (both &gt; 1), write code that calculates and prints the smallest integer <code>exponent</code> such that <code>base**exponent</code> is greater than <code>num</code>.  </i>
+    </p>
+    <p>For example:</p>
+    <pre># when base == 3 and num == 12, it prints
+3
+# when base == 2 and num == 8, it prints
+4
+# when base == 4 and num == 2, it prints
+1
+</pre>
+    <p>
+Enter your Python code for problem 2 here.  Click the blue Submit button to make sure that you copied your code correctly and that it passes our basic tests.
+    </p>
+    <p>Do not include <code>input</code> statements or define variables we said you are given. Our graders will provide values for you, so write your code assuming they are already defined.
+    </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <grader_payload>
+        {"grader": "microquiz/s2018/quiz1/over_power/grade_over_power_student.py"}
+	</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>Note: An L379 or L397 error:</b> means that your code has an infinite loop for some test case. You will receive a zero for this problem if your code has an infinite loop.
+  </p>
+  <p><b>Note on Score Shown:</b> Your code will ultimately be run on our test cases. Getting "Correct"/green check during the exam does not mean you will get full points. The test cases here ensures you do not have a copy/paste error from your IDE.
+  </p>
+</problem>

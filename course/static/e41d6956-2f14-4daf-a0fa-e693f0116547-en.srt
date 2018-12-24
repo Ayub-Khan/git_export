@@ -1,0 +1,588 @@
+0
+00:00:01,300 --> 00:00:03,010
+JOHN GUTTAG: Hello again.
+
+1
+00:00:03,010 --> 00:00:05,850
+Last time, we introduced the notion of probability.
+
+2
+00:00:05,850 --> 00:00:10,990
+Now I want to look at an example of applied probability called hashing.
+
+3
+00:00:10,990 --> 00:00:14,560
+The word hash has different connotations to different people.
+
+4
+00:00:14,560 --> 00:00:18,400
+Those of us who like to eat might think of corned beef hash.
+
+5
+00:00:18,400 --> 00:00:23,740
+I&#39;m told that others think of this plant, but I have no idea what it is.
+
+6
+00:00:23,740 --> 00:00:27,810
+But to a computer scientist, the first thing that comes to mind is, or at
+
+7
+00:00:27,810 --> 00:00:31,780
+least should be, that hashing is a clever implementation technique.
+
+8
+00:00:31,780 --> 00:00:35,660
+It&#39;s how dictionaries are implemented in Python, and it leads to a very
+
+9
+00:00:35,660 --> 00:00:39,560
+efficient search method in terms of time, though, as we shall see, it does
+
+10
+00:00:39,560 --> 00:00:41,560
+come at a cost in space.
+
+11
+00:00:41,560 --> 00:00:44,570
+The basic idea behind a hash table is simple.
+
+12
+00:00:44,570 --> 00:00:48,680
+We convert the key to an integer and then use that integer to index into a
+
+13
+00:00:48,680 --> 00:00:52,470
+list, which we know can be done in constant time.
+
+14
+00:00:52,470 --> 00:00:57,560
+In principle, values of any object can be easily converted to an integer.
+
+15
+00:00:57,560 --> 00:01:01,900
+After all, we know that the internal representation of each object is just
+
+16
+00:01:01,900 --> 00:01:03,100
+a bunch of bits.
+
+17
+00:01:03,100 --> 00:01:07,010
+And any sequence of bits can be viewed as representing an integer.
+
+18
+00:01:07,010 --> 00:01:10,980
+So for example, we can look at the code string to int.
+
+19
+00:01:10,980 --> 00:01:16,000
+A very simple function, it takes a string as an argument, initializes the
+
+20
+00:01:16,000 --> 00:01:20,070
+string called number to the empty string, then, for every character in
+
+21
+00:01:20,070 --> 00:01:24,430
+s, it takes the ordinal value of that character.
+
+22
+00:01:24,430 --> 00:01:30,020
+In Python, as in most programming languages, characters are stored in
+
+23
+00:01:30,020 --> 00:01:35,990
+8-bits at a time, often called a byte, and those bits can then be interpreted
+
+24
+00:01:35,990 --> 00:01:37,030
+as a number.
+
+25
+00:01:37,030 --> 00:01:39,010
+And that&#39;s what ordinal does.
+
+26
+00:01:39,010 --> 00:01:43,270
+Then I&#39;m going to turn that number back into a string so that I can then
+
+27
+00:01:43,270 --> 00:01:45,850
+concatenate it to this number.
+
+28
+00:01:45,850 --> 00:01:48,020
+And I&#39;ll do that for each character in s.
+
+29
+00:01:48,020 --> 00:01:52,420
+Then, when I&#39;m done, I&#39;ll turn that string back into an integer
+
+30
+00:01:52,420 --> 00:01:53,973
+and then return it.
+
+31
+00:01:53,973 --> 00:01:57,810
+That&#39;s a complicated explanation for a small chunk of code.
+
+32
+00:01:57,810 --> 00:02:02,050
+But we can probably see what it does pretty easily if we run it.
+
+33
+00:02:02,050 --> 00:02:07,290
+So let&#39;s first just convert the string a to an integer.
+
+34
+00:02:07,290 --> 00:02:12,150
+It tells us it will convert it to the index 97, which happens to be the
+
+35
+00:02:12,150 --> 00:02:15,560
+Unicode number that represents the string a.
+
+36
+00:02:15,560 --> 00:02:20,390
+Suppose we have a longer string, for example, &#39;John is a cool dude&#39;.
+
+37
+00:02:20,390 --> 00:02:24,000
+Probably should&#39;ve said, let&#39;s make him a way cool dude.
+
+38
+00:02:24,000 --> 00:02:27,840
+Well that&#39;s a pretty long number we&#39;ve got here.
+
+39
+00:02:27,840 --> 00:02:31,570
+My guess is, we do not want to create a list for which that number is a
+
+40
+00:02:31,570 --> 00:02:34,970
+valid index unless we&#39;re going to be storing a heck of a lot of
+
+41
+00:02:34,970 --> 00:02:36,530
+entries in that list.
+
+42
+00:02:36,530 --> 00:02:37,665
+And we&#39;re not.
+
+43
+00:02:37,665 --> 00:02:40,320
+I mean, that&#39;s absurd.
+
+44
+00:02:40,320 --> 00:02:42,560
+We would never want anything that big.
+
+45
+00:02:42,560 --> 00:02:43,830
+So we have to do something.
+
+46
+00:02:43,830 --> 00:02:51,640
+What we have to do is convert large numbers to smaller numbers.
+
+47
+00:02:51,640 --> 00:02:57,530
+So let&#39;s look at a hash function that does that.
+
+48
+00:02:57,530 --> 00:03:03,230
+So we&#39;ve got the hash function hash string, very similar to the function
+
+49
+00:03:03,230 --> 00:03:04,570
+we just looked at.
+
+50
+00:03:04,570 --> 00:03:09,460
+Except, in addition to taking a string as an input, it takes a table size.
+
+51
+00:03:09,460 --> 00:03:13,610
+I don&#39;t care what number you give me, but it better not be bigger than 100.
+
+52
+00:03:13,610 --> 00:03:17,740
+Then it proceeds as before to build up a number.
+
+53
+00:03:17,740 --> 00:03:22,400
+But then, instead of returning that number, it takes the number mod table
+
+54
+00:03:22,400 --> 00:03:28,740
+size, therefore guaranteeing that it is no bigger that 100.
+
+55
+00:03:28,740 --> 00:03:33,560
+So now, let&#39;s run it on the same two strings we&#39;ve looked at before, a and
+
+56
+00:03:33,560 --> 00:03:36,900
+&#39;John is a way cool dude&#39;.
+
+57
+00:03:36,900 --> 00:03:45,120
+Now what we see is that a still has an index of 97 because we know that 97
+
+58
+00:03:45,120 --> 00:03:47,680
+mod 101 is 97.
+
+59
+00:03:47,680 --> 00:03:50,850
+But John has been reduced to that large, unpronounceable
+
+60
+00:03:50,850 --> 00:03:54,080
+number, to a mere 51.
+
+61
+00:03:54,080 --> 00:03:56,850
+So he too will fit into the table.
+
+62
+00:03:56,850 --> 00:04:01,070
+Now let&#39;s look at how we use this idea of a hash function to actually
+
+63
+00:04:01,070 --> 00:04:04,270
+implement a data structure.
+
+64
+00:04:04,270 --> 00:04:08,730
+So I&#39;m going to assume that we only have 7 entries because that&#39;s all I
+
+65
+00:04:08,730 --> 00:04:11,060
+could fit on this page.
+
+66
+00:04:11,060 --> 00:04:13,830
+So the first thing we&#39;re going to do is, we&#39;re going to insert, let&#39;s say
+
+67
+00:04:13,830 --> 00:04:16,430
+this is a mapping of first names to last names.
+
+68
+00:04:16,430 --> 00:04:26,110
+And so the key will be Eric, and the value will be his last name, which is
+
+69
+00:04:26,110 --> 00:04:30,710
+Grimson, son of Grim, I guess.
+
+70
+00:04:30,710 --> 00:04:34,530
+All right, so the first thing we need to do is, we need to hash Eric.
+
+71
+00:04:34,530 --> 00:04:37,880
+So let&#39;s come back over here to the code window.
+
+72
+00:04:37,880 --> 00:04:44,210
+And if we hash Eric into a table of size 7, we get an index of 2.
+
+73
+00:04:44,210 --> 00:04:52,890
+So 0 1 2 will put Grimson here because when we next look up the key Eric,
+
+74
+00:04:52,890 --> 00:04:57,250
+we&#39;ll hash it again, we&#39;ll get to 2, we&#39;ll look it up and say, oh, the
+
+75
+00:04:57,250 --> 00:04:59,730
+value is Grimson.
+
+76
+00:04:59,730 --> 00:05:03,200
+Well, let&#39;s look at Chris Terman.
+
+77
+00:05:03,200 --> 00:05:09,064
+We&#39;ll hash Chris, and while we&#39;re at it, we&#39;ll hash Sarina.
+
+78
+00:05:09,064 --> 00:05:18,710
+Well, Chris will get put at index 3 and Sarina will get put at index 5.
+
+79
+00:05:18,710 --> 00:05:23,510
+Well, this is all well and good, but there&#39;s a potential problem.
+
+80
+00:05:23,510 --> 00:05:25,500
+Let&#39;s add Jill to the table.
+
+81
+00:05:28,690 --> 00:05:30,860
+We have a problem.
+
+82
+00:05:30,860 --> 00:05:34,580
+When we hash Jill, it also hash to 3.
+
+83
+00:05:34,580 --> 00:05:37,300
+And so, well, what do we do?
+
+84
+00:05:37,300 --> 00:05:43,140
+We probably can&#39;t put her last name here because now, when we hash Jill,
+
+85
+00:05:43,140 --> 00:05:46,470
+how do we know whether it&#39;s a Terman or Smith, or Chris, whether it&#39;s a
+
+86
+00:05:46,470 --> 00:05:48,020
+Terman or a Smith.
+
+87
+00:05:48,020 --> 00:05:51,500
+We need a slight modification to deal with this problem.
+
+88
+00:05:51,500 --> 00:05:53,860
+This problem, by the way, has a name.
+
+89
+00:05:53,860 --> 00:05:55,110
+It&#39;s called a collision.
+
+90
+00:05:57,550 --> 00:05:59,270
+Why do we have collisions?
+
+91
+00:05:59,270 --> 00:06:05,630
+We have collisions because a hash function is a many-to-one mapping.
+
+92
+00:06:05,630 --> 00:06:10,650
+The whole point was to take a very large space and map each element in
+
+93
+00:06:10,650 --> 00:06:13,840
+that space into a much smaller space.
+
+94
+00:06:13,840 --> 00:06:17,680
+Inevitably, if we&#39;re doing that, sooner or later we&#39;re going to have to
+
+95
+00:06:17,680 --> 00:06:23,270
+map more than one element from this big space to the same point in the
+
+96
+00:06:23,270 --> 00:06:24,580
+smaller space.
+
+97
+00:06:24,580 --> 00:06:29,220
+And that is what produces a collision.
+
+98
+00:06:29,220 --> 00:06:32,910
+Fortunately, collisions are not that difficult to handle.
+
+99
+00:06:32,910 --> 00:06:36,690
+Let&#39;s go back, try a slightly different data structure.
+
+100
+00:06:36,690 --> 00:06:41,465
+I&#39;ve made my table a lot skinnier here because instead of putting names in
+
+101
+00:06:41,465 --> 00:06:45,490
+it, I&#39;m going to start by initializing each element of the table
+
+102
+00:06:45,490 --> 00:06:46,740
+to the empty list.
+
+103
+00:06:50,390 --> 00:06:56,760
+Now, when I first hash Eric, I&#39;ll still hash him to this place.
+
+104
+00:06:56,760 --> 00:07:01,220
+And this, by the way, is called a bucket, or a hash bucket.
+
+105
+00:07:01,220 --> 00:07:02,940
+I get to this bucket.
+
+106
+00:07:02,940 --> 00:07:05,790
+I notice there&#39;s nobody in it so far.
+
+107
+00:07:05,790 --> 00:07:12,170
+And so I replace this empty list by a list containing a tuple.
+
+108
+00:07:12,170 --> 00:07:18,900
+And the tuple is both the key, Eric, and the value, Grimson.
+
+109
+00:07:23,070 --> 00:07:29,670
+I&#39;ll then get Chris, and he&#39;ll do the same thing as we come to here.
+
+110
+00:07:29,670 --> 00:07:34,620
+And now I&#39;ll get a list with the singleton tuple in it.
+
+111
+00:07:38,110 --> 00:07:42,320
+I&#39;ll skip Sarina because you can imagine what happens with Sarina here.
+
+112
+00:07:42,320 --> 00:07:45,300
+But now let&#39;s look at Jill.
+
+113
+00:07:45,300 --> 00:07:51,350
+So Jill will, again, hash to the same bucket as Chris.
+
+114
+00:07:51,350 --> 00:07:58,370
+What I do is, I replace this list, or, actually, I append to this list
+
+115
+00:07:58,370 --> 00:07:59,980
+another element.
+
+116
+00:07:59,980 --> 00:08:04,970
+And that element is the tuple Jill, Smith.
+
+117
+00:08:04,970 --> 00:08:06,990
+Now, what happens when I want to do a look up?
+
+118
+00:08:06,990 --> 00:08:10,150
+If I look up Eric, I&#39;ll hash him to this bucket.
+
+119
+00:08:10,150 --> 00:08:14,890
+I&#39;ll go there, and I&#39;ll check that yes, that key and
+
+120
+00:08:14,890 --> 00:08:15,980
+that key are the same.
+
+121
+00:08:15,980 --> 00:08:18,580
+And I&#39;ll return Grimson.
+
+122
+00:08:18,580 --> 00:08:20,660
+What happens when I look up Jill?
+
+123
+00:08:20,660 --> 00:08:22,390
+I&#39;ll come to this bucket.
+
+124
+00:08:22,390 --> 00:08:26,100
+And I now go through this list one element at a time.
+
+125
+00:08:26,100 --> 00:08:32,460
+I compare Jill to the key Chris, say, nope that&#39;s not the tuple I want.
+
+126
+00:08:32,460 --> 00:08:38,830
+I then compare Jill to Jill and say, ah ha, that is a tuple I want, and I
+
+127
+00:08:38,830 --> 00:08:40,520
+return Smith.
+
+128
+00:08:40,520 --> 00:08:46,280
+So now you see why we were a little wishy-washy, and we always said near
+
+129
+00:08:46,280 --> 00:08:47,990
+constant time.
+
+130
+00:08:47,990 --> 00:08:54,060
+Because, as you can see, if the table is small, and I insert many, many
+
+131
+00:08:54,060 --> 00:08:59,690
+elements in it, then that hash buckets could get very long.
+
+132
+00:08:59,690 --> 00:09:06,520
+So for example, if I have a table with only 1 element, and I insert 1,000
+
+133
+00:09:06,520 --> 00:09:12,290
+names, then that one bucket will be 1,000 names long, and I&#39;m reduced to
+
+134
+00:09:12,290 --> 00:09:13,780
+linear search.
+
+135
+00:09:13,780 --> 00:09:18,830
+What we have here is a classic example of what&#39;s called a
+
+136
+00:09:18,830 --> 00:09:21,826
+time-space trade off.
+
+137
+00:09:21,826 --> 00:09:29,480
+If I make the table large, then I will have few collisions and look up will
+
+138
+00:09:29,480 --> 00:09:31,790
+be very fast.
+
+139
+00:09:31,790 --> 00:09:36,390
+I make the table small, relative to the number of elements I put in the
+
+140
+00:09:36,390 --> 00:09:39,490
+table, there will be more collisions.
+
+141
+00:09:39,490 --> 00:09:44,010
+That finished my explanation of how hash tables work.
+
+142
+00:09:44,010 --> 00:09:47,270
+We&#39;ll give you some code that you can run to play with and
+
+143
+00:09:47,270 --> 00:09:48,520
+see how they work.
+
+144
+00:09:48,520 --> 00:09:52,830
+And in the next segment, we&#39;ll spend just a few minutes at the start of it
+
+145
+00:09:52,830 --> 00:09:56,580
+using some probability to try and understand what is the
+
+146
+00:09:56,580 --> 00:09:57,830
+likelihood of a collision.
+

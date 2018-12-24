@@ -1,0 +1,13 @@
+<video youtube="1.00:BqrRaoS3U0A" url_name="5e91716f482f4f5bbfc22401fc92abd5" sub="" transcripts="{&quot;en&quot;: &quot;8eb8f6fb-4c1a-40d6-a3a2-56b8e28a559d-en.srt&quot;}" display_name="Video: Floats and Fractions" download_track="true" download_video="true" edx_video_id="8eb8f6fb-4c1a-40d6-a3a2-56b8e28a559d" handout="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture3.zip" html5_sources="[]" youtube_id_1_0="BqrRaoS3U0A">
+  <handout src="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture3.zip"/>
+  <video_asset client_video_id="L3_S4.mov" duration="572.69" image="">
+    <encoded_video bitrate="451" file_size="32328768" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V001900_DTH.mp4"/>
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="BqrRaoS3U0A"/>
+    <encoded_video bitrate="286" file_size="20507037" profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V001900_MB1.mp4"/>
+    <encoded_video bitrate="249" file_size="17891224" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V001900_MB2.mp4"/>
+    <transcripts>
+      <transcript file_format="srt" language_code="en" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="8eb8f6fb-4c1a-40d6-a3a2-56b8e28a559d-en.srt"/>
+</video>

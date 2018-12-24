@@ -1,0 +1,36 @@
+<problem display_name="Problem 7" markdown="null" max_attempts="10" showanswer="past_due" weight="15.0">
+  <text>
+    <p>
+      <b>
+        <font color="red">If you are done the exam, <a href="https://docs.google.com/forms/d/1mMEeZz2KBcBZHbQA_Fu9DrclOoIHwsuIT9YF2uqG5ts/" target="_blank">click here to checkout</a>. Only checkout once to remove your quiz access. <br/> If you do not checkout you will receive a zero on the exam.</font>
+      </b>
+    </p>
+    <p>Write a function that implements the specification below.</p>
+    <pre>def get_sublists(L, n):
+    """ L: a non-empty list of ints
+        n: an int
+    Raises a ValueError if the list contains less than n elements.
+    Returns a list of all possible sublists consisting of n consecutive elements of L. 
+    The sublists in the returned list are ordered in the way they appear in L.  """
+    # your code here
+</pre>
+    <p>For example:</p>
+    <pre>L = [9,3,5,1,9]
+n = 3
+print(get_sublists(L, n)) # prints the list [[9,3,5], [3,5,1], [5,1,9]]
+</pre>
+    <p>Paste your entire function, including the definition, in the box below. Do not leave any debugging print statements.</p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="30" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <grader_payload>
+{"grader": "quiz/60001_f2018/get_sublists/grade_get_sublists_student.py", "hide_output": false}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+  <p><b>Note: An L379 or L397 error:</b> means that your code has an infinite loop for some test case. You will receive a zero for this problem if your code has an infinite loop.
+  </p>
+  <p><b>Note on Score Shown:</b> Your code will ultimately be run on our test cases. Getting "Correct"/green check during the exam does not mean you will get full points. The test cases here ensures you do not have a copy/paste error from your IDE.
+  </p>
+</problem>

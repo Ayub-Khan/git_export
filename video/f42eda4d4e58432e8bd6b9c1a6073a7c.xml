@@ -1,0 +1,13 @@
+<video youtube="1.00:hu3MswxA3EE" url_name="f42eda4d4e58432e8bd6b9c1a6073a7c" sub="" transcripts="{&quot;en&quot;: &quot;4427f2fe-e50d-4c4f-a762-add4025f5dba-en.srt&quot;}" display_name="Video: Fibonacci" download_track="true" download_video="true" edx_video_id="4427f2fe-e50d-4c4f-a762-add4025f5dba" handout="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture4.zip" html5_sources="[]" youtube_id_1_0="hu3MswxA3EE">
+  <handout src="/asset-v1:mit+mitx101+20122+type@asset+block@Lecture4.zip"/>
+  <video_asset client_video_id="L4_S9.mov" duration="250.92" image="">
+    <encoded_video bitrate="315" file_size="9896619" profile="desktop_mp4" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002600_DTH.mp4"/>
+    <encoded_video bitrate="228" file_size="7180190" profile="mobile_high" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002600_MB1.mp4"/>
+    <encoded_video bitrate="0" file_size="0" profile="youtube" url="hu3MswxA3EE"/>
+    <encoded_video bitrate="206" file_size="6485407" profile="mobile_low" url="https://d2f1egay8yehza.cloudfront.net/MITX6001/MITX60012016-V002600_MB2.mp4"/>
+    <transcripts>
+      <transcript file_format="srt" language_code="en" provider="Custom"/>
+    </transcripts>
+  </video_asset>
+  <transcript language="en" src="4427f2fe-e50d-4c4f-a762-add4025f5dba-en.srt"/>
+</video>

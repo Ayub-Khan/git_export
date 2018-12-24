@@ -1,0 +1,30 @@
+<problem display_name="Exercise 1" markdown="null" showanswer="correct_or_past_due" weight="0.5">
+  <text>
+    <p>
+      Assume that the variable, <code>number</code>, is assigned a numerical value.</p>
+    <p>Write a piece of Python code that prints out one of the following messages:</p>
+    <ul>
+      <li><code>positive</code> if <code>number</code> is positive</li>
+      <li><code>negative</code> if <code>number</code> is negative</li>
+      <li><code>zero</code> if <code>number</code> equal to zero</li>
+    </ul>
+    <p>For problems such as these, do not include <code>input</code> statements or define variables we said you are given. Our graders will provide values for you, so write your code assuming they are already defined.
+    </p>
+  </text>
+  <coderesponse queuename="Watcher-MITx-6.0001r">
+    <textbox rows="10" cols="80" mode="python" tabsize="4"/>
+    <codeparam>
+      <initial_display/>
+      <answer_display>
+if number &gt; 0:
+    print('positive')
+elif number &lt; 0:
+    print('negative')
+else:
+    print('zero')</answer_display>
+      <grader_payload>
+{"grader": "finger_exercises/L2/pos_neg/grade_pos_neg.py"}
+</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>
